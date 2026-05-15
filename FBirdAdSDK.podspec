@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   # Canonical resource bundle, checked into git as the single source of truth.
   # The build script copies this same bundle into XCFramework/Resources/ for
   # consumers who integrate the XCFramework directly (without CocoaPods).
-  s.resources = 'Resources/FBirdAdSDKBundle.bundle'
+  s.resources = 'XCFramework/Resources/FBirdAdSDKBundle.bundle'
 
   # Static framework: avoid duplicate-symbol issues when host uses use_frameworks!
   s.static_framework = true
