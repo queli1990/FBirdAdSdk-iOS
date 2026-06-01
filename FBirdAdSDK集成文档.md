@@ -23,7 +23,7 @@ pod install
 ### 2.2 手动集成
 
 1. 将 `FBirdAdSDK.xcframework` 拖入项目中
-2. 将 `FBirdAdSDKBundle.bundle` 拖入项目中
+2. 将 `FBirdAdSDKBundle.bundle` 拖入项目中，并加入 **Copy Bundle Resources**
 3. 在 Build Phases 的 Link Binary With Libraries 中添加所需的系统框架：
    - UIKit
    - Foundation
@@ -31,14 +31,13 @@ pod install
 
 ## 3. 初始化 SDK
 
-在 AppDelegate 的 `didFinishLaunchingWithOptions` 方法中初始化 SDK：
+1. 集成后，在**首次发起广告请求前**配置隐私相关选项即可；（广告位 ID（`tagid`）与客户标识（`caid`）在调用 `loadAdsWithTagID:caid:...` 或 `loadAdViewsWithTagID:caid:...` 时传入。）
+2. 建议在 App 启动早期（如 AppDelegate 的 `didFinishLaunchingWithOptions`）完成以下配置：
 
 ```objc
 #import <FBirdAdSDK/FBirdAdSDK.h>
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // 初始化 SDK
-    [FBirdAdSDKManager initializeWithAppId:@"your_app_id"];
     
     // 设置是否允许使用 IDFV
     [FBirdAdSDKManager setCanUseIDFVState:YES];
@@ -46,8 +45,8 @@ pod install
     // 设置是否允许使用 IDFA
     [FBirdAdSDKManager setCanUseIDFAState:YES];
     
-    // 设置个性化广告
-    [FBirdAdSDKManager setCanUseLimitPersonalAdsState:YES];
+    // 个性化：允许 NO，限制 YES
+    [FBirdAdSDKManager setCanUseLimitPersonalAdsState:NO];
     
     return YES;
 }
@@ -199,4 +198,4 @@ FBirdAdSDK 提供了以下事件回调：
 ---
 
 **FBirdAdSDK 团队**
-**2026年4月14日**
+**2026年**
