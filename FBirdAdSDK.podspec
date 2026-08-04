@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.dependency 'AnyThinkiOS'
   s.dependency 'Ads-CN/BUAdSDK', '7.6.1.7'
   s.dependency 'Ads-CN/BUAdLive-Framework', '7.6.1.7'
-  s.dependency 'Ads-CN/CSJMediaion', '7.6.1.7'
+  s.dependency 'Ads-CN/CSJMediation', '7.6.1.7'
 
   # Static framework: avoid duplicate-symbol issues when host uses use_frameworks!
   s.static_framework = true
