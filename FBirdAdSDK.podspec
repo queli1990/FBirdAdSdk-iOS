@@ -18,8 +18,7 @@ Pod::Spec.new do |s|
   # consumers who integrate the XCFramework directly (without CocoaPods).
   s.resources = 'XCFramework/Resources/FBirdAdSDKBundle.bundle'
 
-  # External dependencies
-  s.dependency 'lottie-ios', '~> 4.4.0'
+  # External dependencies (移除了不必要的 lottie-ios)
   s.dependency 'AnyThinkiOS'
   s.dependency 'Ads-CN/BUAdSDK', '7.6.1.7'
   s.dependency 'Ads-CN/BUAdLive-Framework', '7.6.1.7'
