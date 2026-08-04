@@ -14,6 +14,7 @@ FOUNDATION_EXPORT NSErrorDomain const FBirdAdSDKErrorDomain;
 typedef NS_ERROR_ENUM(FBirdAdSDKErrorDomain, FBirdAdSDKErrorCode) {
     FBirdAdSDKErrorInvalidBid = -1001,             ///< 广告数据异常，缺少Bid
     FBirdAdSDKErrorInvalidReportURL = -1002,       ///< 广告上报地址异常
+    FBirdAdSDKErrorInvalidReportParameters = -1003, ///< 广告上报缺少有效 view 等宏替换依赖参数
     FBirdAdSDKErrorRequestBuildFailed = -2001,     ///< 广告请求准备失败
     FBirdAdSDKErrorNetworkFailed = -3001,          ///< 网络连接异常
     FBirdAdSDKErrorResponseInvalid = -3002,        ///< 广告响应数据异常
@@ -70,7 +71,7 @@ typedef void (^FBirdAdSDKAdUrlCompletionBlock)(BOOL success, NSError * _Nullable
 //是否获取IDFA
 +(void)setCanUseIDFAState:(BOOL) canUse;
 
-//个性化广告设置
+//个性化广告设置 YES=限制个性化 NO=允许个性化
 +(void)setCanUseLimitPersonalAdsState:(BOOL) canUse;
 
 

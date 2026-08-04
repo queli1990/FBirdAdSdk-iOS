@@ -76,6 +76,8 @@ typedef void(^FBirdAdUserActionCallback)(FBirdAdUserActionType actionType);
 @property (nonatomic, strong) FBirdAdSDKBid * bid;
 /// 广告用户行为事件回调属性
 @property (nonatomic, copy) FBirdAdUserActionCallback userActionCallback;
+/// 是否在加载时静音（用于延迟播放，默认NO）
+@property (nonatomic, assign) BOOL muteOnLoad;
 // 初始化方法
 - (instancetype)initWithFrame:(CGRect)frame adtype:(int)adtype sensitivity:(double)sensitivity;
 // 配置视图内容
